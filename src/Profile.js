@@ -4,7 +4,6 @@ import { Link, Outlet } from "react-router-dom";
 const Profile = () => {
   return (
     <>
-      <Outlet />
       <div className="bg-secondary">
         <h1>This is the profile</h1>
         <ul>
@@ -14,8 +13,18 @@ const Profile = () => {
           <li>
             <Link to="/profile/tola">Tola</Link>
           </li>
+          <li>
+            <Link to="/profile/1">One</Link>
+          </li>
+          <li>
+            <Link to="/profile/2">Two</Link>
+          </li>
+          <li>
+            <Link to="/profile/3">Three</Link>
+          </li>
         </ul>
       </div>
+      <Outlet />
     </>
   );
 };

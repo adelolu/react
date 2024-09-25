@@ -11,6 +11,8 @@ import Profile from "./Profile";
 import Temi from "./Temi";
 import Tola from "./Tola";
 import DefaultProfile from "./DefaultProfile";
+import Number from "./Number";
+import Product from "./Product";
 
 function App() {
   return (
@@ -20,10 +22,14 @@ function App() {
         <Route path="/" element={<Body />} />
         <Route path="/about" element={<About />} />
 
+        {/* useeffect */}
+        <Route path="/product" element={<Product />} />
+
         <Route path="/profile" element={<Profile />}>
           <Route path="/profile" element={<DefaultProfile />} />
           <Route path="/profile/temi" element={<Temi />} />
           <Route path="/profile/tola" element={<Tola />} />
+          <Route path="/profile/:num" element={<Number />} />
         </Route>
 
         <Route path="*" element={<ErrorPage />} />
