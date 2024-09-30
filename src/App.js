@@ -21,8 +21,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Body />} />
         <Route path="/about" element={<About />} />
-
-        {/* useeffect */}
         <Route path="/product" element={<Product />} />
 
         <Route path="/profile" element={<Profile />}>
