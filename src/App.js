@@ -13,6 +13,7 @@ import Tola from "./Tola";
 import DefaultProfile from "./DefaultProfile";
 import Number from "./Number";
 import Product from "./Product";
+import Form from "./Form";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Body />} />
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/signup" element={<Form />} />
 
         <Route path="/profile" element={<Profile />}>
           <Route path="/profile" element={<DefaultProfile />} />
